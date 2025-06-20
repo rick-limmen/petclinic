@@ -1,0 +1,13 @@
+name: Testing automatic building
+run-name: petclinic deployment
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: setup-java
+      - run: cd ..
+      - run: cd ..
+      - run: cd ..
+      - run: mvn clean
+      - run: mvn package
