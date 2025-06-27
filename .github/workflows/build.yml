@@ -1,8 +1,10 @@
-name: Testing automatic building
-run-name: petclinic deployment
+name: Automatic push on commit
+run-name: "petclinic deployment"
 on: [push]
+env:
+  DATETIME: date +%m%d%H%M%Y
 jobs:
-  Is-This-Arbitrary:
+  Deploy-Petclinic:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -16,3 +18,9 @@ jobs:
           cache: maven
       - run: mvn clean
       - run: mvn package
+      - name: push changes to remote
+        run: |
+          git config --global user.name "rick-limmen"
+          git config --global user.email "rick.limmen@devoteam.com"
+          git add -A; git commit -m "automatic build push"
+          git push
