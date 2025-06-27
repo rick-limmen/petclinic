@@ -21,5 +21,5 @@ jobs:
           mvn package
           git config --global user.name 'rick-limmen'
           git config --global user.email 'rick.limmen@devoteam.com'
-          git add 0A; git commit -m 'automatic build push'
+          git add -A; git commit -m 'automatic build push'
           git push
