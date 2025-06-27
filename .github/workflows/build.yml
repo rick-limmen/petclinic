@@ -8,8 +8,10 @@ jobs:
       run:
         working-directory: /home/runner/work/petclinic/petclinic
     steps:
-      - name: XDTesting Print Directory Structure
-        uses: FiorelaCiroku/XDTesting-Print-Directory-Structure@v1.0.2
+      - name: "hallo dit is een naam"
+        run: pwd
+      - name: git init
+        run: git init
       - uses: actions/setup-java@v3
         with:
           java-version: '11'
