@@ -8,10 +8,6 @@ jobs:
       run:
         working-directory: /home/runner/work/petclinic/petclinic
     steps:
-      - name: "hallo dit is een naam"
-        run: pwd
-      - name: git init
-        run: git init
       - uses: actions/setup-java@v3
         with:
           java-version: '11'
