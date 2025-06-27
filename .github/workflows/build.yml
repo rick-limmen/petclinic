@@ -2,7 +2,7 @@ name: Testing automatic building
 run-name: petclinic deployment
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Is-This-Arbitrary:
     runs-on: ubuntu-latest
     defaults:
       run:
