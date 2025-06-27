@@ -10,8 +10,12 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
           cache: maven
+      - run: pwd
       - run: cd ..
+      - run: pwd
       - run: cd ..
+      - run: pwd
       - run: cd ..
+      - run: pwd
       - run: mvn clean
       - run: mvn package
