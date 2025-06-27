@@ -5,17 +5,17 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: pwd
+      - run: cd ..
+      - run: pwd
+      - run: cd ..
+      - run: pwd
+      - run: cd ..
+      - run: pwd
       - uses: actions/setup-java@v3
         with:
           java-version: '11'
           distribution: 'temurin'
           cache: maven
-      - run: pwd
-      - run: cd ..
-      - run: pwd
-      - run: cd ..
-      - run: pwd
-      - run: cd ..
-      - run: pwd
       - run: mvn clean
       - run: mvn package
