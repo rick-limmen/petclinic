@@ -19,7 +19,8 @@ jobs:
       - run: |
           mvn clean
           mvn package
-          git config --global user.name 'rick-limmen'
-          git config --global user.email 'rick.limmen@devoteam.com'
-          git add -A; git commit -m 'automatic build push'
-          git push
+      - name: Upload .war file as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: petclinic-war
+          path: /home/runner/work/petclinic/petclinic/target/*.war
