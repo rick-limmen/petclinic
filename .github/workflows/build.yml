@@ -4,7 +4,7 @@ on: [push]
 env:
   DATETIME: date +%m%d%H%M%Y
 jobs:
-  Deploy-Petclinic:
+  Build-Petclinic:
     runs-on: ubuntu-latest
     defaults:
       run:
