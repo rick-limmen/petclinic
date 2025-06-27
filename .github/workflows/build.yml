@@ -22,5 +22,5 @@ jobs:
       - name: Upload .war file as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: petclinic-war
+          name: make war available for download
           path: /home/runner/work/petclinic/petclinic/target/*.war
