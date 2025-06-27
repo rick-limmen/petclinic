@@ -8,7 +8,7 @@ jobs:
       run:
         working-directory: /home/runner/work/petclinic/petclinic
     steps:
-      - run: echo !()
+      - run: echo "hello world"
       - uses: actions/setup-java@v3
         with:
           java-version: '11'
