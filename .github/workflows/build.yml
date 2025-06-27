@@ -20,7 +20,7 @@ jobs:
           mvn clean
           mvn package
       - name: Upload .war file as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: petclinic-war
           path: /home/runner/work/petclinic/petclinic/target/*.war
